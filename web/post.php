@@ -1,6 +1,7 @@
 <?php
 
-print_r($_GET);
+print_r($_POST);
+echo $_POST['name'];
 
 ?>
 
@@ -16,11 +17,10 @@ print_r($_GET);
 
 <body>
 
-    <?php
-    $id = 10;
-    ?>
-
-    <a href="get.php?id=<?php echo $id; ?>">CLICK HERE</a>
+    <form action="post.php" method="post">
+        <input type="text" name="name" id="">
+        <input type="submit" value="Submit">
+    </form>
 
 </body>
 

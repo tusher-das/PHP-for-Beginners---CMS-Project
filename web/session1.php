@@ -1,6 +1,6 @@
-<?php
+<?php session_start();
 
-print_r($_GET);
+$_SESSION['greeting'] = "Hello there, this is awesome session!";
 
 ?>
 
@@ -15,12 +15,6 @@ print_r($_GET);
 </head>
 
 <body>
-
-    <?php
-    $id = 10;
-    ?>
-
-    <a href="get.php?id=<?php echo $id; ?>">CLICK HERE</a>
 
 </body>
 
